@@ -1,0 +1,11 @@
+﻿@{
+  Layout = "~/Views/Shared/_RemoteDialogLayout.cshtml";
+}
+<script src="~/Scripts/HogeDialog/common.js"></script>
+<script src="~/Scripts/HogeDialog/content.js"></script>
+<br />
+※実際はここでサーバサイドとajax通信したりしていろいろやったりする<br />
+<br />
+引数：<span data-bind="text:name"></span><br />
+戻り値：<input type="text" data-bind="value:age" /><br />
+<input type="button" value="OK" data-bind="click:onOk" />&nbsp;<input type="button" value="Cancel" data-bind="click:onCancel" />

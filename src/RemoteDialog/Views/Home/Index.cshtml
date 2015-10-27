@@ -1,0 +1,15 @@
+﻿@{
+  ViewBag.Title = "Home Page";
+}
+@Scripts.Render("~/bundles/dialogcommon")
+
+<script src="~/Scripts/HogeDialog/common.js"></script>
+<script src="~/Scripts/HogeDialog/hogeDialog.js"></script>
+
+<script src="~/Scripts/Home/index.js"></script>
+
+<fieldset>
+  名前:<input type="text" data-bind="value:name" /><br />
+  年齢：<span data-bind="text:age"></span><br />
+  <input type="button" value="ダイアログオープン" data-bind="click:onDialogOpen" />
+</fieldset>
